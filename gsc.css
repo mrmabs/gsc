@@ -1,0 +1,93 @@
+table {
+	border-collapse: collapse;
+    border: 0;
+	min-width: 500px;
+}
+
+table.dbg {
+	min-width: 500px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+	border: 0;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+th.band {
+	min-width: 3em;
+	max-width: 4em;
+	text-align: center;
+}
+
+td.band {
+	min-width: 3em;
+	max-width: 4em;
+	text-align: center;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+body {
+	font-family: sans-serif;
+}
+
+.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {
+	background: black;
+	color: white;
+	font-size: 24pt;
+}
+
+footer {
+	background: #aaa;
+	color: white;
+}
+
+.nav {
+	background:#eee;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0.3em;
+	clear: both;
+}
+
+.nav li {
+	float: left;
+	margin-left: 0.2em;
+}
+
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 1024px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+	.nav li {float:none;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
